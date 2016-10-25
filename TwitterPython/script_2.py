@@ -78,7 +78,7 @@ a3 = a2.group(2) #source name will be in unicode, group(2) has just the source n
 with open('Source.csv', 'w') as csv_file: #Stores the analysed value in csv file.
     writer = csv.writer(csv_file,delimiter=',')
     writer.writerow(["Number of Unique sources",len(o)])
-    writer.writerow(["Max source used to tweet" , max(dict_1.values()), "Source", a3])
+    writer.writerow(["Max no of times the is source used to tweet" , max(dict_1.values()), "Source", a3])
     writer.writerow(["Percentage of tweets from the source", percentage])
 					
 	
