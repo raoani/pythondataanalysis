@@ -1,0 +1,88 @@
+Question,Answered By,Score
+Is there a Java equivalent for Python&#39;s map function?,user467871,6
+Link C in llvmlite,Coder3000,1
+Adding extra data to Django Rest Framework results for entire result set,gaizka,11
+Converting a 3D List to a 3D NumPy array,Cleb,4
+permutations with unique values,Luka Rahne,32
+taking the product of the elements of tuples based on their sum,wim,5
+Difference between __str__ and __repr__ in Python,moshez,1488
+Check if a given key already exists in a dictionary,Chris B.,1273
+Best way to check if a list is empty,Patrick,2406
+append vs. extend,kender,2417
+Python how to save datetime.strptime in datetime.time format,xZise,0
+How to find the nth derivative given the first derivative with SymPy?,Stelios,3
+Calling an external command in Python,David Cournapeau,2206
+"Python what do &#39;and/or&#39; mean in expression, and what does `(not i%2)` test?",Prune,2
+django modelformset_factory doesn&#39;t include actual forms,e4c5,1
+Python ndb Datastore put list to Datastore,Jesse,1
+Time a while loop python,Greg,7
+argparse.REMAINDER changes the behavior of positional arguments,hpaulj,0
+What does `if __name__ == &quot;__main__&quot;:` do?,Mr Fooz,2472
+Finding the index of an item given a list containing it in Python,Alex Coventry,1879
+Why does unpacking give results in tuple,Oleksandr Dashkov,4
+Compiled Python script &quot;No handlers could be found for logger &quot;paramiko.transport&quot;,fernandezcuesta,0
+Sort a Python dictionary by value,Devin Jeanpierre,2288
+Checking username availability - Handling of AJAX requests (Google App Engine),Dev93,2
+Accessing a class&#39;s variable in Python,e-satis,46
+Keep on halving by integer division until x=1,August Williams,1
+Replace value with two arrays numpy,btquanto,1
+python - counting algorithm solving using &quot;bitwise or of x and y&quot;,Nurzhan,2
+TensorFlow stuck into endless loop using tf.while_loop(),mrry,2
+Django: broken migrations,Risadinha,0
+Filter rows in a pandas DataFrame based on a value,piRSquared,4
+Understanding Python super() with __init__() methods,Kiv,945
+Datastore Model for Complex access management with different sorting options,voscausa,1
+Index matching with multiple columns in python,jezrael,4
+Create n x n cell of vectors in python,patstew,2
+Logical OR operation between tuple elements in python,joydeep bhattacharjee,0
+Catch multiple exceptions in one line (except block),bernie,1781
+Explain Python&#39;s slice notation,Greg Hewgill,1912
+How to get current time in Python,Harley Holcombe,1159
+Fetching the &lt;td&gt; element using Beautiful Soup,Selcuk,1
+Python: How to set up a __str__ function in a PriorityQueue,rickcnagy,2
+Anomaly in python with matrix multiplication,Christian,0
+How do I pass a variable by reference?,Blair Conrad,1629
+Pandas crosstab - How to print rows/columns for values that don&#39;t exist in the data sets?,jezrael,3
+Print Dictionary with commas separating values,aleivag,0
+"Differences between STATICFILES_DIR, STATIC_ROOT and MEDIA_ROOT",Maxime Lorant,18
+How to modify object in Python&#39;s Rtree index,Anony-Mousse,0
+python comparing elements in dictionary to a float,Shasha99,2
+Erasing pairs of equal ranking in the same list?,James K,0
+Filter by a Reference Property in Appnengine,Jeff O&#39;Neill,0
+function that takes iterables and returns a string,Marcin,0
+can&#39;t pickle listreverseiterator objects using PySpark,LostInOverflow,1
+Read first N lines of a file in python,John La Rooy,82
+Problems while scraping a table from a website?,kiran.koduru,1
+How to merge two Python dictionaries in a single expression?,Aaron Hall,1281
+Python HTTP Error 505: HTTP Version Not Supported,Jan Vlcinsky,2
+"HDF5 - concurrency, compression &amp; I/O performance",Jeff,52
+How to send None with Signals across threads?,ekhumoro,2
+Endpoint returns values in a different order on deployed server,GAEfan,0
+Add key to a dictionary in Python?,Paolo Bergantino,1618
+How to check if a directory exists and create it if necessary?,Blair Conrad,2063
+Solve set of simple equations given only a few variables,user2357112,2
+Efficient way for finding all the complete subgraphs of a given graph (Python)?,user2983638,1
+GQL: Not equal filter on a multivalued property,speedplane,0
+What is the difference between @staticmethod and @classmethod in Python?,unutbu,1268
+How to make a chain of function decorators in Python?,Paolo Bergantino,2347
+How do I install pip on Windows?,Colonel Panic,1179
+how to combine two dataframes without a common key in Python,kiran.koduru,0
+&quot;Least Astonishment&quot; and the Mutable Default Argument,Roberto Liffredo,1044
+Does Python have a string contains substring method?,Michael Mrozek,2308
+arbitrary gql filters and sorts without huge index.yaml,George,0
+Python instance has no __call__ method,nosklo,6
+Detect Python version at runtime,Chris,49
+How do I populate a select tag with Flask?,Mark Hildreth,6
+Is there a way to run Python on Android?,JohnMudd,543
+Accessing the index in Python &#39;for&#39; loops,Mike Hordecki,2691
+What does the &quot;yield&quot; keyword do?,e-satis,8448
+Why do I need to decorate connected slots with pyqtSlot?,ekhumoro,4
+How to query the property of a property in Google App Engine?,Tim Hoffman,2
+Quit when QThreadPool not empty?,Svend Feldt,1
+Python &quot;SyntaxError: Non-ASCII character &#39;\xe2&#39; in file&quot;,DSM,54
+Inheriting math methods into a class with only static methods,gbe,2
+Parameter defaults using other parameters in python,Sweeney Todd,3
+Generating unique slug in Django,Nick B,2
+Listing most common suffixes using Python,Fejs,0
+How to implement insert for OrderedDict in python 3,Two-Bit Alchemist,1
+GAE (Python) Best practice: Load config from JSON file or Datastore?,Amber,0

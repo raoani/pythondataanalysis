@@ -28,7 +28,7 @@ lst1 = []
 x = find_path(newpath)
 dict_2 ={}
 dict_3 ={}
-print(x)
+#print(x)
 for i in range(len(x)) :
 	newpath1 = newpath + '//' + x[i]
 	x1 = find_path(newpath1)
@@ -37,19 +37,20 @@ for i in range(len(x)) :
 		with open(os.path.join(newpath1 , x1[j])) as f:
 			data = json.load(f)
 		for j1 in range(len(data['items'])) :
-			user_id = data['items'][j1]['owner']['user_id']
-			r = requests.get('https://api.stackexchange.com/2.2/users/{0}?key=q5*VT6u7xCuP)L7A*80abA((&order=desc&sort=modified&site=stackoverflow'.format(user_id))
-			y  = r.json()
-			dict_3[str(user_id)] = {str(y['items'][0]['display_name']) : str(y['items'][0]['link'])}
-			dict_2[str(user_id)] = y['items'][0]['reputation']
-			a.append(user_id)
-print(len(a))
-print(a)
+			if data['items'][j1]['owner']['user_type'] == 'registered' :
+				user_id = data['items'][j1]['owner']['user_id']
+				r = requests.get('https://api.stackexchange.com/2.2/users/{0}?key=q5*VT6u7xCuP)L7A*80abA((&order=desc&sort=modified&site=stackoverflow'.format(user_id))
+				y  = r.json()
+				dict_3[str(user_id)] = {str(y['items'][0]['display_name']) : str(y['items'][0]['link'])}
+				dict_2[str(user_id)] = y['items'][0]['reputation']
+				a.append(user_id)
+#print(len(a))
+#print(a)
 with open(os.path.join(newpathoutput, args.search_term + 'reputation.csv'), 'w') as csv_file: #Stores the analysed value in csv file.
     writer = csv.writer(csv_file,delimiter=',')
     writer.writerow([" Questions according to Reputation "])
 lst1 = sorted(dict_2.values(),reverse=True)
-print(lst1)
+#print(lst1)
 for i1 in range(len(lst1)) :
 	for key , value in dict_2.iteritems() :
 		if value == lst1[i1] :

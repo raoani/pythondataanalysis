@@ -36,17 +36,18 @@ for i in range(len(x)) :
 		with open(os.path.join(newpath1 , x1[j])) as f:
 			data = json.load(f)
 		for j1 in range(len(data['items'])) :
-			user_id = data['items'][j1]['owner']['user_id']
-			r = requests.get('https://api.stackexchange.com/2.2/users/{0}?key=q5*VT6u7xCuP)L7A*80abA((&order=desc&sort=modified&site=stackoverflow'.format(user_id))
-			y  = r.json()
-			a.append(user_id)
-			for i in range(len(y['items'])) :
-				d = y['items'][i]['badge_counts']
-				countg = countg + d['gold']
-				counts = counts + d['silver']
-				countb = countb + d['bronze']
-				dict_2[str(user_id)]=  (d)
-				dict_3[str(user_id)] = str(y['items'][0]['display_name'])
+			if data['items'][j1]['owner']['user_type'] == 'registered' :
+				user_id = data['items'][j1]['owner']['user_id']
+				r = requests.get('https://api.stackexchange.com/2.2/users/{0}?key=q5*VT6u7xCuP)L7A*80abA((&order=desc&sort=modified&site=stackoverflow'.format(user_id))
+				y  = r.json()
+				a.append(user_id)
+				for i in range(len(y['items'])) :
+					d = y['items'][i]['badge_counts']
+					countg = countg + d['gold']
+					counts = counts + d['silver']
+					countb = countb + d['bronze']
+					dict_2[str(user_id)]=  (d)
+					dict_3[str(user_id)] = str(y['items'][0]['display_name'])
 dict_4 = {}
 newpathoutput = cwd + '//' + 'output'
 sum1 = countg + counts + countb
@@ -58,7 +59,7 @@ for key, value in dict_2.iteritems() :
 	gs = dict_2[key]['silver']
 	gb = dict_2[key]['bronze']
 	dict_4[dict_3[key]] = [gd/countg*100, gs/counts*100, gb/countb*100]
-print(dict_4)
+#print(dict_4)
 with open(os.path.join(newpathoutput, args.search_term + 'badges_percentage.csv'), 'w') as csv_file: #Stores the analysed value in csv file.
     writer = csv.writer(csv_file,delimiter=',')
     writer.writerow(["Total percentage of each badge : ","gold = "+ str(gold),"silver = " + str(silver), "bronze = " + str(bronze)])

@@ -16,40 +16,49 @@ parser.add_argument("--search_term", help="provide a search term. Use ; instead 
 args = parser.parse_args()
 dict_1 = {}
 cwd = os.getcwd()
+
+
 def find_path(newpath) : #searches for a particular path and lists the directories in that path
 	if not os.path.exists(newpath):
        		print('no file found')
 	else :
 		a = os.listdir(newpath)
 		return a
+
+
 newpath = cwd + '//' + 'stackoverflow' + '//' + args.search_term
 newpathuid = cwd + '//' + 'stackoverflow' + '//' + 'user_id_' + args.search_term
-x = find_path(newpath)
+
+x = find_path(newpath)   #searches the path provided by newpath
+
 dict_2 ={}
 dict_3={}
+
+
 for i in range(len(x)) :
 	newpath1 = newpath + '//' + x[i]
-	x1 = find_path(newpath1)
-	for j in range(len(x1)) :
-		with open(os.path.join(newpath1 , x1[j])) as f:
+	x1 = find_path(newpath1)  
+	for j in range(len(x1)) : #itterates through each file inside the path
+		with open(os.path.join(newpath1 , x1[j])) as f:   #opens the json files inside the directories
 			data = json.load(f)
-		for j1 in range(len(data['items'])) :
-			user_id = data['items'][j1]['owner']['user_id']
-			dict_3[str(user_id)] = {str(data['items'][j1]['owner']['display_name']) : str(data['items'][j1]['title'])}
-			r = requests.get('https://api.stackexchange.com/2.2/users/{0}?key=q5*VT6u7xCuP)L7A*80abA((&order=desc&sort=modified&site=stackoverflow'.format(user_id))
-			y  = r.json()
-			with open(os.path.join(newpathuid , 'user_id') , 'a') as outfile:
-    				json.dump(y, outfile)
-			a.append(user_id)
-			for i in range(len(y['items'])) :
-				d = y['items'][i]['badge_counts']
-				count = d['bronze'] + d['silver']*10 + d['gold']*20
-				dict_2[str(user_id)]=  count
+		for j1 in range(len(data['items'])) :   #analysis of data inside json
+			if data['items'][j1]['owner']['user_type'] == 'registered' :  #checks if the user has deleted his account or not 
+				user_id = data['items'][j1]['owner']['user_id'] #extracts the user_ID
+				dict_3[str(user_id)] = {str(data['items'][j1]['owner']['display_name']) : str(data['items'][j1]['title'])}  #stores user_id as the key with name and title of question as the values
+				r = requests.get('https://api.stackexchange.com/2.2/users/{0}?key=q5*VT6u7xCuP)L7A*80abA((&order=desc&sort=modified&site=stackoverflow'.format(user_id))
+				y  = r.json()
+				with open(os.path.join(newpathuid , 'user_id') , 'a') as outfile:
+    					json.dump(y, outfile)
+				a.append(user_id)
+				for i in range(len(y['items'])) :
+					d = y['items'][i]['badge_counts']
+					count = d['bronze'] + d['silver']*10 + d['gold']*20
+					dict_2[str(user_id)]=  count
 l= []
 newpathoutput = cwd + '//' + 'output'
 #print(dict_3)
 #print(dict_2)
-print(sorted(dict_2.values(),reverse=True))
+#print(sorted(dict_2.values(),reverse=True))
 for key, value in dict_2.iteritems() :
 	if value == max(dict_2.values()) :
 		jai = key
