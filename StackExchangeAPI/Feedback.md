@@ -6,7 +6,7 @@ Feedbacks :
 * Try to have proper column names in output files.
 
 ```python
-cwd = os.getcwd()   <- Not a good way.
+cwd = os.getcwd()                           <- Not a good way.
 
 newpath =  cwd + '//' + 'stackoverflow'     <- Use os.join instead.
 ```
