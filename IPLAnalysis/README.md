@@ -1,7 +1,7 @@
 # IPL DATA ANALYSIS AND PLOTTING THE ANALYSED DATA
 2 data sets of the IPL tournament which is played in india every year was downloaded from the below link and using the 2 data sets, data analysis was done and the output can be seen as both a CSV file as well as a graph in PNG format. I have written 5 scripts which perform the analysis and whereas 1 script that divides the obtained dataset into the required format.  
 
- <https://www.kaggle.com/manasgarg/ipl>
+[kaggle IPL dataset] (<https://www.kaggle.com/manasgarg/ipl>)
 
 
 ## Online Documentation 
@@ -22,14 +22,14 @@ Execute collect_data.py. This particular script combines the 2 datasets (matches
 
     python collect_data.py
  
- Link to program : <https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/PythonAnalysis/InitialStep.ipynb>
+ Link to program : [collect_data.py](<https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/PythonAnalysis/InitialStep.ipynb>)
  
  matches.csv
  
  ![matches](https://cloud.githubusercontent.com/assets/22183540/21074969/c828f854-bed4-11e6-8d6e-e929d30a123d.png)
  
  
- Link : <https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/matches.csv>
+ Link : [matches.csv] (<https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/matches.csv>)
  
  
  deliveries.csv
@@ -38,7 +38,7 @@ Execute collect_data.py. This particular script combines the 2 datasets (matches
  ![deliveries](https://cloud.githubusercontent.com/assets/22183540/21074967/c4aae340-bed4-11e6-930b-58be8e863863.png)
  
  
- Link : <https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/deliveries.csv>
+ Link : [deliveries.csv] (<https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/deliveries.csv>)
  
  
  season_x.csv
@@ -47,7 +47,7 @@ Execute collect_data.py. This particular script combines the 2 datasets (matches
  ![combined](https://cloud.githubusercontent.com/assets/22183540/21074970/c950d4c2-bed4-11e6-9479-282243036b27.png)
  
  
- Link : <https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/Seasons/season_1.csv>
+ Link : [season_1.csv] (<https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/Seasons/season_1.csv>)
  
  
 
@@ -59,9 +59,9 @@ Execute collect_data.py. This particular script combines the 2 datasets (matches
 	
     python analysis_1.py --Team your_wish
 
-Link to code : <https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/PythonAnalysis/analysis_1.ipynb>
+Link to code : [analysis_1] (<https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/PythonAnalysis/analysis_1.ipynb>)
 
-Link to .csv : <https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/Output/Royal%20Challengers%20Bangalore/analysis_1.csv>
+Link to .csv : [analysis_1.csv] ( <https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/Output/Royal%20Challengers%20Bangalore/analysis_1.csv>)
 
 
 
@@ -80,9 +80,9 @@ Use Quotes to write the team name ("Royal Challengers Bangalore") and use full n
 	
    python analysis_2.py --Team your_wish
    
- Link to code : <https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/PythonAnalysis/analysis_2.ipynb>
+ Link to code : [analysis_2] (<https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/PythonAnalysis/analysis_2.ipynb>)
  
- Link to .csv : <https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/Output/Royal%20Challengers%20Bangalore/analysis_2.csv>
+ Link to .csv : [analysis_2.csv] (<https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/Output/Royal%20Challengers%20Bangalore/analysis_2.csv>)
 
 The above command line performs the following function, it first checks if an output folder exsists and if the team name subfolder is present. If not present, it will create respective folders. The script calculates the runs scored by boundaries(4s and 6s), extras and by other means. Plots the percentage of each of these towards the total score at the end of each season. The below image can be seen for better understanding. 
 
@@ -97,9 +97,9 @@ Analysis/deliveries.csv>
 
    python analysis_3.py --number your_wish
    
- Link to csv : <https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/Output/V%20Kohli/analysis_3.csv>
+ Link to csv : [analysis_3.csv] (<https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/Output/V%20Kohli/analysis_3.csv>)
  
- Link to code : <https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/PythonAnalysis/analysis_3.ipynb>
+ Link to code : [analysis_3] (<https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/PythonAnalysis/analysis_3.ipynb>)
 
 The above command line performs the following function, it first checks if an output folder exsists and if the player name subfolder is present. If not present, it will create respective folders. The above script initally calculates the total runs scored by each players over all the season and arranges them according to descending order. Accepts a rank from the user and performs analysis on the player. The output is a PNG with the his contribution of runs towards that of the total teams runs per season. The below graph can be seen for better understanding. Eg : python analysis_3.py --number 1
 
@@ -111,9 +111,9 @@ The above command line performs the following function, it first checks if an ou
 
 	python analysis_4.py --Team your_wish --Score your_wish
 	
-Link to Csv : <https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/Output/Royal%20Challengers%20Bangalore/analysis_4.csv>
+Link to Csv : [analysis_4] (<https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/Output/Royal%20Challengers%20Bangalore/analysis_4.csv>)
 
-Link to code : <https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/PythonAnalysis/analysis_4.ipynb>
+Link to code : [analysis_4.csv] (<https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/PythonAnalysis/analysis_4.ipynb>)
 
 The above command line performs the following function, it first checks if an output folder exsists and if the team name subfolder is present. If not present, it will create respective folders. The script calculates how many times a particular team has won when they have scored above a particular score and then calculates the win rate in percentage vs each season. Plots it on a Bar graph accordingly. 
 Below is a sample output.
@@ -127,11 +127,11 @@ Below is a sample output.
 
 	python analysis_5.py --Team your_wish
 
-Link to csv : 
-<https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/Output/Royal%20Challengers%20Bangalore/analysis_5.csv>
+Link to csv : [analysis_5.csv]
+(<https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/Output/Royal%20Challengers%20Bangalore/analysis_5.csv>)
 
-Link to code :
-<https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/PythonAnalysis/analysis_5.ipynb>
+Link to code : [analysis_5]
+(<https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/PythonAnalysis/analysis_5.ipynb>)
 
 
 
