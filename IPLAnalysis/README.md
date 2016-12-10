@@ -23,7 +23,7 @@ Download the 2 data sets from the above link.
     python collect_data.py
 
 
-2. ##  How many wickets have fallen in each over through all the seasons for any particular team?
+2. ##  How many wickets have fallen in each over through all the seasons for a particular team?
 
     Execute analysis_1.py as follows,
 	
@@ -39,7 +39,7 @@ Use Quotes to write the team name ("Royal Challengers Bangalore") and use full n
 
 
 
-3. ##  What percentage of runs scored by any team have come from boundaries(4s and 6s seperately), extras and by other ways for each season?
+3. ##  What percentage of runs scored by a team have come from boundaries(4s and 6s seperately), extras and by other ways for each season?
    
    Execute analysis_2.py as follows,
 	
@@ -51,7 +51,7 @@ The above command line performs the following function, it first checks if an ou
 
 
 
-4. ## Arrange the Batsmen according to their rank based on the total runs scored in all seasons. What is their contribution towards the total runs scored by their team in each season?
+4. ## Arrange the Batsmen according to their rank based on the total runs scored in all seasons. What is their contribution to the total runs scored by their team in each season?
 
    Execute analysis_3.py as follows,
 
@@ -61,7 +61,7 @@ The above command line performs the following function, it first checks if an ou
 
 ![analysis_3](https://cloud.githubusercontent.com/assets/22183540/21072176/65fa7c86-be87-11e6-8319-ac7c939412a7.jpg)
 
-5. ## Calculate the WINRATE in percentage of a particular team in all seasons when they have scored above certain score?
+5. ## Calculate the WINRATE in percentage of a particular team in all seasons when they have scored above a certain score?
 	
 	Execute analysis_4.py as follows,
 
@@ -73,7 +73,7 @@ Below is a sample output.
 ![analysis_4](https://cloud.githubusercontent.com/assets/22183540/21072209/84a02586-be88-11e6-9669-223d534834b0.jpg)
 
 
-6. ## For a particular team, on an average how much have they scored during powerplay and after powerplay in each season?
+6. ## For a particular team, what is the average runs scored during and after powerplay in each season?
 
 	Execute analysis_5.py as follows,
 
