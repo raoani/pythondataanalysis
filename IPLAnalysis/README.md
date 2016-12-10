@@ -47,7 +47,7 @@ The above command line performs the following function, it first checks if an ou
 
 
 
-5. Execute analysis_3.py as follows,
+4. Execute analysis_3.py as follows,
 
    python analysis_3.py --number your_wish
 
@@ -55,7 +55,7 @@ The above command line performs the following function, it first checks if an ou
 
 ![analysis_3](https://cloud.githubusercontent.com/assets/22183540/21072176/65fa7c86-be87-11e6-8319-ac7c939412a7.jpg)
 
-6. Execute analysis_4.py as follows,
+5. Execute analysis_4.py as follows,
 
 	python analysis_4.py --Team your_wish --Score your_wish
 
@@ -65,7 +65,7 @@ Below is a sample output.
 ![analysis_4](https://cloud.githubusercontent.com/assets/22183540/21072209/84a02586-be88-11e6-9669-223d534834b0.jpg)
 
 
-7. Execute analysis_5.py as follows,
+6. Execute analysis_5.py as follows,
 
 	python analysis_5.py --Team your_wish
 
