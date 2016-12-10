@@ -1,7 +1,7 @@
 # IPL DATA ANALYSIS AND PLOTTING THE ANALYSED DATA
 2 data sets of the IPL tournament which is played in india every year was downloaded from the below link and using the 2 data sets, data analysis was done and the output can be seen as both a CSV file as well as a graph in PNG format. I have written 5 scripts which perform the analysis and whereas 1 script that divides the obtained dataset into the required format.  
 
-[kaggle IPL dataset] (<https://www.kaggle.com/manasgarg/ipl>)
+[Kaggle IPL dataset] (<https://www.kaggle.com/manasgarg/ipl>)
 
 
 ## Online Documentation 
@@ -80,9 +80,9 @@ Use Quotes to write the team name ("Royal Challengers Bangalore") and use full n
 	
    python analysis_2.py --Team your_wish
    
- Link to code : [analysis_2] (<https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/PythonAnalysis/analysis_2.ipynb>)
+Link to code : [analysis_2] (<https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/PythonAnalysis/analysis_2.ipynb>)
  
- Link to .csv : [analysis_2.csv] (<https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/Output/Royal%20Challengers%20Bangalore/analysis_2.csv>)
+Link to .csv : [analysis_2.csv] (<https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/Output/Royal%20Challengers%20Bangalore/analysis_2.csv>)
 
 The above command line performs the following function, it first checks if an output folder exsists and if the team name subfolder is present. If not present, it will create respective folders. The script calculates the runs scored by boundaries(4s and 6s), extras and by other means. Plots the percentage of each of these towards the total score at the end of each season. The below image can be seen for better understanding. 
 
@@ -97,9 +97,9 @@ Analysis/deliveries.csv>
 
    python analysis_3.py --number your_wish
    
- Link to csv : [analysis_3.csv] (<https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/Output/V%20Kohli/analysis_3.csv>)
+Link to csv : [analysis_3.csv] (<https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/Output/V%20Kohli/analysis_3.csv>)
  
- Link to code : [analysis_3] (<https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/PythonAnalysis/analysis_3.ipynb>)
+Link to code : [analysis_3] (<https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/PythonAnalysis/analysis_3.ipynb>)
 
 The above command line performs the following function, it first checks if an output folder exsists and if the player name subfolder is present. If not present, it will create respective folders. The above script initally calculates the total runs scored by each players over all the season and arranges them according to descending order. Accepts a rank from the user and performs analysis on the player. The output is a PNG with the his contribution of runs towards that of the total teams runs per season. The below graph can be seen for better understanding. Eg : python analysis_3.py --number 1
 
