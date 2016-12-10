@@ -74,8 +74,10 @@ newpath3 = creating_newpath(newpath2 , batting_team)
 #store each in a CSV and then Plo
 df1 = appended_data.reset_index(drop = False)
 df1 = df1[np.isfinite(df1['runs_according_to_powerplay'])]
+sns.set_style('whitegrid')
 ax = sns.pointplot(x="over", y="runs_according_to_powerplay", hue="season",
                     data=df1)
+
 ax.set(xlabel = 'Average power play runs per season' , ylabel = 'Overs' , title = 'Runs during and after powerplay : ' + batting_team)
 plt.savefig(os.path.join(newpath2 , 'analysis_5.jpg'))
 appended_data.to_csv(os.path.join(newpath2,'analysis_5.csv'))

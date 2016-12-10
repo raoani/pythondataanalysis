@@ -21,7 +21,6 @@ parser.add_argument("--number", help="provide a search term, latitude, longitude
 args = parser.parse_args()
 k = int(args.number)
 
-newpath = r'C:\Users\aniru\Desktop'
 def creating_newpath(newpath, x) : #Creates a new path for every file or checks if it exsists.
     if not os.path.exists(newpath):
         os.makedirs(newpath)
@@ -32,6 +31,7 @@ def creating_newpath(newpath, x) : #Creates a new path for every file or checks 
         return newpath1
 
 # In[39]:
+
 
 dict_1 = {}
 dict_2 = {}
@@ -53,6 +53,7 @@ df3 = df3.drop_duplicates(['batsman'])
 df4 = df3.sort_values(by = ['total_batsman'], ascending= False)
 df4 = df4.reset_index(drop=True)
 a = df4.batsman.unique().tolist()[k-1]
+
 
 
 # In[25]:
@@ -84,17 +85,22 @@ for i in x :
 appended_data = pd.concat(appended_data, axis=0)
 appended_data.set_index(['season'])
 
+
+# In[41]:
+
+newpath = r'C:\Users\aniru\Desktop'
 newpath1 = creating_newpath(newpath , 'Output')
 newpath2  = creating_newpath(newpath1 , a)
 newpath3 = creating_newpath(newpath2 , a)
-# In[41]:
-
+df4.to_csv(os.path.join(newpath2,'analysis_top_batsman.csv'))
 fig = plt.figure() 
-sns.barplot(x =appended_data.season , y = appended_data['total_runs_by_team'] , color = "red")
-bottom_plot = sns.barplot(x = appended_data.season, y = appended_data['total_runs_by_' + a], color = "#0000A3")
+sns.barplot(x =appended_data.season , y = appended_data['total_runs_by_team'] , color = "#79c36a")
+bottom_plot = sns.barplot(x = appended_data.season, y = appended_data['total_runs_by_' + a], color = "blue")
+sns.set_style('whitegrid')
 bottom_plot.set(xlabel='Seasons', ylabel='Total runs by team and ' + a, title = 'Runs Scored by ' + a + ' through all seasons')
-red_patch = mpatches.Patch(color='red', label='Total Runs By a Team')
+red_patch = mpatches.Patch(color='#79c36a', label='Total Runs By a Team')
 blue_patch  = mpatches.Patch(color = 'blue' , label = 'Runs by ' + a)
+sns.set_style('whitegrid')
 plt.legend(handles=[red_patch,blue_patch])
 plt.ylim([0,3500])
 plt.savefig(os.path.join(newpath2 , 'analysis_3.jpg'))

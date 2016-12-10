@@ -89,10 +89,13 @@ newpath2  = creating_newpath(newpath1 , batting_team)
 newpath3 = creating_newpath(newpath2 , batting_team)
 # In[8]:
 
+sns.set_style("whitegrid")
 plt.subplots(figsize=(20,8))
-ax = sns.barplot(x='season',y='percentage_above_'+str(j)+'_and_won',data=df4)
+sns.set_style("whitegrid")
+ax = sns.barplot(x='season',y='percentage_above_'+str(j)+'_and_won',data=df4 , color = 'blue')
+sns.set_style('whitegrid')
 ax.set(title = 'Win rate of ' + batting_team + ' when they score above '+ str(j) + ' for all seasons in Percentage')
-
+sns.set_style('whitegrid')
 plt.savefig(os.path.join(newpath2 , 'analysis_4.jpg'))
 df4.to_csv(os.path.join(newpath2,'analysis_4.csv'))
 # In[ ]:

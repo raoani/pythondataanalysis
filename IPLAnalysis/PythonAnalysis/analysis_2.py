@@ -80,24 +80,27 @@ def autolabel(rects):
                 ha='center', va='bottom')
 width = 0.20
 fig = plt.figure()
+sns.set_style("whitegrid")
 ax = fig.add_subplot(111)
-
+sns.set_style("whitegrid")
 ax.set_title('Percentage of 4s, 6s and extras through all seasons : ' + batting_team)
 ax.set_ylabel('Percentage of runs')
 ax.set_xlabel('Season')
 ax.set_xticks(appended_data.season+width)
 ax.set_xticklabels( appended_data.season.unique().tolist() )        
 
-rects1 = ax.bar(appended_data.season, appended_data.percentage_from_6s, width, color='r')
-rects2 = ax.bar(appended_data.season+width, appended_data.percentage_from_4s, width, color='g')
-rects3 = ax.bar(appended_data.season+width*2, appended_data.percentage_from_extra, width, color='b')
-rects4 = ax.bar(appended_data.season+width*3, appended_data.runs_from_rest, width, color='m')
+
+rects1 = ax.bar(appended_data.season, appended_data.percentage_from_6s, width, color='#f9a65a')
+rects2 = ax.bar(appended_data.season+width, appended_data.percentage_from_4s, width, color='#f1595f')
+rects3 = ax.bar(appended_data.season+width*2, appended_data.percentage_from_extra, width, color='#79c36a')
+rects4 = ax.bar(appended_data.season+width*3, appended_data.runs_from_rest, width, color="#599ad3")
 ax.legend( (rects1[0], rects2[0], rects3[0], rects4[0]), ('Percentage of 6s', 'Percentage of 4s', 'Percentage of extras','Percentage of runs scored(Execpt Boundaries)') )
 
 autolabel(rects1)
 autolabel(rects2)
 autolabel(rects3)
 autolabel(rects4)
+sns.set_style("whitegrid")
 plt.ylim([1,100])
 plt.savefig(os.path.join(newpath2 , 'analysis_2.jpg'))
 appended_data.to_csv(os.path.join(newpath2,'analysis_2.csv'))
