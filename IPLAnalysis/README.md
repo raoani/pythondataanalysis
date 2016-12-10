@@ -1,3 +1,8 @@
+# IPL 
+
+![IPL](<https://cricfrog.com/wp-content/uploads/2016/01/Indian-Premier-League-IPL-Today-Match-Prediction.jpg>)
+
+
 # IPL DATA ANALYSIS AND PLOTTING THE ANALYSED DATA
 2 data sets of the IPL tournament which is played in india every year was downloaded from the below link and using the 2 data sets, data analysis was done and the output can be seen as both a CSV file as well as a graph in PNG format. I have written 5 scripts which perform the analysis and whereas 1 script that divides the obtained dataset into the required format.  
 
@@ -14,6 +19,7 @@ Choice of Programming : Python.
 
 These scripts can be executed on any bash which has python pre-installed or any UNIX-based operating systems using the below commands. 
 Download the 2 data sets from the above link. 
+
 
 
 ## Data Extraction
@@ -69,7 +75,7 @@ When the above line is executed, the script first creates 1 folder on the deskto
 Use Quotes to write the team name ("Royal Challengers Bangalore") and use full name of the team with spaces.
 
 
-![analysis_1](https://cloud.githubusercontent.com/assets/22183540/21072094/363d3116-be85-11e6-9e0d-5ad75fba4972.jpg)
+![analysis_1](https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/Output/Royal%20Challengers%20Bangalore/analysis_1.jpg)
 
 
 
@@ -87,7 +93,7 @@ Link to .csv : [analysis_2.csv] (<https://github.com/raoani/pythondataanalysis/b
 The above command line performs the following function, it first checks if an output folder exsists and if the team name subfolder is present. If not present, it will create respective folders. The script calculates the runs scored by boundaries(4s and 6s), extras and by other means. Plots the percentage of each of these towards the total score at the end of each season. The below image can be seen for better understanding. 
 
 
-![analysis_2](https://cloud.githubusercontent.com/assets/22183540/21072137/5552a8e6-be86-11e6-8434-e16cedab0f5f.jpg)
+![analysis_2](https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/Output/Royal%20Challengers%20Bangalore/analysis_2.jpg)
 
 
 
@@ -103,7 +109,7 @@ Link to code : [analysis_3] (<https://github.com/raoani/pythondataanalysis/blob/
 
 The above command line performs the following function, it first checks if an output folder exsists and if the player name subfolder is present. If not present, it will create respective folders. The above script initally calculates the total runs scored by each players over all the season and arranges them according to descending order. Accepts a rank from the user and performs analysis on the player. The output is a PNG with the his contribution of runs towards that of the total teams runs per season. The below graph can be seen for better understanding. Eg : python analysis_3.py --number 1
 
-![analysis_3](https://cloud.githubusercontent.com/assets/22183540/21072176/65fa7c86-be87-11e6-8319-ac7c939412a7.jpg)
+![analysis_3](https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/Output/V%20Kohli/analysis_3.jpg)
 
 4. ## Calculate the WINRATE in percentage of a particular team in all seasons when they have scored above a certain score?
 	
@@ -118,7 +124,7 @@ Link to code : [analysis_4.csv] (<https://github.com/raoani/pythondataanalysis/b
 The above command line performs the following function, it first checks if an output folder exsists and if the team name subfolder is present. If not present, it will create respective folders. The script calculates how many times a particular team has won when they have scored above a particular score and then calculates the win rate in percentage vs each season. Plots it on a Bar graph accordingly. 
 Below is a sample output.
 
-![analysis_4](https://cloud.githubusercontent.com/assets/22183540/21072209/84a02586-be88-11e6-9669-223d534834b0.jpg)
+![analysis_4](https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/Output/Royal%20Challengers%20Bangalore/analysis_4.jpg)
 
 
 5. ## For a particular team, what is the average runs scored during and after powerplay in each season?
@@ -138,6 +144,6 @@ Link to code : [analysis_5]
 The above command line performs the following function, it first checks if an output folder exsists and if the team name subfolder is present. If not present, it will create respective folders. The script calculates an average runs scored during and after powerplay of all the matches of a particular team for all the seasons and then plots it using point plot to give a fair idea about each of the teams performance in each season. The below graph can be reffered for better understanding,
 
 
-![analysis_5](https://cloud.githubusercontent.com/assets/22183540/21072230/5cb50d92-be89-11e6-85bf-3dd9ddbd6bc3.jpg)
+![analysis_5](https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/Output/Royal%20Challengers%20Bangalore/analysis_5.jpg)
 
 
