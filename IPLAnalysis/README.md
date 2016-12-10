@@ -16,19 +16,54 @@ These scripts can be executed on any bash which has python pre-installed or any 
 Download the 2 data sets from the above link. 
 
 
-## Steps to Execute
+## Data Extraction
 
-1. Execute collect_data.py. This particular script combines the 2 datasets (matches,deliveries) into 1 file. Creates a folder with the name Seasons and a subfolder with the name combined. Stores the combined dataset as combined.csv inside combined subfolder and then splits the merged data into different seasons, stored the split data into different CSVs inside the Seasons folder. Below is the command line to execute the script.
+Execute collect_data.py. This particular script combines the 2 datasets (matches,deliveries) into 1 file. Creates a folder with the name Seasons and a subfolder with the name combined. Stores the combined dataset as combined.csv inside combined subfolder and then splits the merged data into different seasons, stored the split data into different CSVs inside the Seasons folder. Below is the command line to execute the script.
 
     python collect_data.py
+ 
+ Link to program : <https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/PythonAnalysis/InitialStep.ipynb>
+ 
+ matches.csv
+ 
+ ![matches](https://cloud.githubusercontent.com/assets/22183540/21074969/c828f854-bed4-11e6-8d6e-e929d30a123d.png)
+ 
+ 
+ Link : <https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/matches.csv>
+ 
+ 
+ deliveries.csv
+ 
+ 
+ ![deliveries](https://cloud.githubusercontent.com/assets/22183540/21074967/c4aae340-bed4-11e6-930b-58be8e863863.png)
+ 
+ 
+ Link : <https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/deliveries.csv>
+ 
+ 
+ season_x.csv
+ 
+ 
+ ![combined](https://cloud.githubusercontent.com/assets/22183540/21074970/c950d4c2-bed4-11e6-9479-282243036b27.png)
+ 
+ 
+ Link : <https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/Seasons/season_1.csv>
+ 
+ 
 
+## Steps to Execute
 
-2. ##  How many wickets have fallen in each over through all the seasons for a particular team?
+1. ##  How many wickets have fallen in each over through all the seasons for a particular team?
 
     Execute analysis_1.py as follows,
 	
     python analysis_1.py --Team your_wish
-	
+
+Link to code : <https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/PythonAnalysis/analysis_1.ipynb>
+
+Link to .csv : <https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/Output/Royal%20Challengers%20Bangalore/analysis_1.csv>
+
+
 
 When the above line is executed, the script first creates 1 folder on the desktop named output and a subfolder with the team's name. The script calculates the fall of wickets for each over in all the seasons and plots a histogram showing how many wickets have fallen during each over through all the seasons. The picture below shows a sample of the output. The output PNG can be found in the output and team name subfolder with its corresponding CSV.
 Use Quotes to write the team name ("Royal Challengers Bangalore") and use full name of the team with spaces.
@@ -39,33 +74,46 @@ Use Quotes to write the team name ("Royal Challengers Bangalore") and use full n
 
 
 
-3. ##  What percentage of runs scored by a team have come from boundaries(4s and 6s seperately), extras and by other ways for each season?
+2. ##  What percentage of runs scored by a team have come from boundaries(4s and 6s seperately), extras and by other ways for each season?
    
    Execute analysis_2.py as follows,
 	
    python analysis_2.py --Team your_wish
+   
+ Link to code : <https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/PythonAnalysis/analysis_2.ipynb>
+ 
+ Link to .csv : <https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/Output/Royal%20Challengers%20Bangalore/analysis_2.csv>
 
 The above command line performs the following function, it first checks if an output folder exsists and if the team name subfolder is present. If not present, it will create respective folders. The script calculates the runs scored by boundaries(4s and 6s), extras and by other means. Plots the percentage of each of these towards the total score at the end of each season. The below image can be seen for better understanding. 
+
 
 ![analysis_2](https://cloud.githubusercontent.com/assets/22183540/21072137/5552a8e6-be86-11e6-8434-e16cedab0f5f.jpg)
 
 
 
-4. ## Arrange the Batsmen according to their rank based on the total runs scored in all seasons. What is their contribution to the total runs scored by their team in each season?
-
+3. ## Arrange the Batsmen according to their rank based on the total runs scored in all seasons. What is their contribution to the total runs scored by their team in each season?
+Analysis/deliveries.csv>
    Execute analysis_3.py as follows,
 
    python analysis_3.py --number your_wish
+   
+ Link to csv : <https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/Output/V%20Kohli/analysis_3.csv>
+ 
+ Link to code : <https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/PythonAnalysis/analysis_3.ipynb>
 
 The above command line performs the following function, it first checks if an output folder exsists and if the player name subfolder is present. If not present, it will create respective folders. The above script initally calculates the total runs scored by each players over all the season and arranges them according to descending order. Accepts a rank from the user and performs analysis on the player. The output is a PNG with the his contribution of runs towards that of the total teams runs per season. The below graph can be seen for better understanding. Eg : python analysis_3.py --number 1
 
 ![analysis_3](https://cloud.githubusercontent.com/assets/22183540/21072176/65fa7c86-be87-11e6-8319-ac7c939412a7.jpg)
 
-5. ## Calculate the WINRATE in percentage of a particular team in all seasons when they have scored above a certain score?
+4. ## Calculate the WINRATE in percentage of a particular team in all seasons when they have scored above a certain score?
 	
 	Execute analysis_4.py as follows,
 
 	python analysis_4.py --Team your_wish --Score your_wish
+	
+Link to Csv : <https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/Output/Royal%20Challengers%20Bangalore/analysis_4.csv>
+
+Link to code : <https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/PythonAnalysis/analysis_4.ipynb>
 
 The above command line performs the following function, it first checks if an output folder exsists and if the team name subfolder is present. If not present, it will create respective folders. The script calculates how many times a particular team has won when they have scored above a particular score and then calculates the win rate in percentage vs each season. Plots it on a Bar graph accordingly. 
 Below is a sample output.
@@ -73,11 +121,19 @@ Below is a sample output.
 ![analysis_4](https://cloud.githubusercontent.com/assets/22183540/21072209/84a02586-be88-11e6-9669-223d534834b0.jpg)
 
 
-6. ## For a particular team, what is the average runs scored during and after powerplay in each season?
+5. ## For a particular team, what is the average runs scored during and after powerplay in each season?
 
 	Execute analysis_5.py as follows,
 
 	python analysis_5.py --Team your_wish
+
+Link to csv : 
+<https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/Output/Royal%20Challengers%20Bangalore/analysis_5.csv>
+
+Link to code :
+<https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/PythonAnalysis/analysis_5.ipynb>
+
+
 
 The above command line performs the following function, it first checks if an output folder exsists and if the team name subfolder is present. If not present, it will create respective folders. The script calculates an average runs scored during and after powerplay of all the matches of a particular team for all the seasons and then plots it using point plot to give a fair idea about each of the teams performance in each season. The below graph can be reffered for better understanding,
 
