@@ -1,4 +1,4 @@
-**Table of Contents** 
+# **Table of Contents** 
 
 - [IPL](#)
 - [IPL DATA ANALYSIS AND PLOTTING THE ANALYSED DATA](#)
