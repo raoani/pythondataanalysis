@@ -154,9 +154,9 @@ The above command line performs the following function, it first checks if an ou
 
 	python analysis_4.py --Team your_wish --Score your_wish
 	
-Link to Csv : [analysis_4] (<https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/Output/Royal%20Challengers%20Bangalore/analysis_4.csv>)
+Link to Csv : [analysis_4.csv] (<https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/Output/Royal%20Challengers%20Bangalore/analysis_4.csv>)
 
-Link to code : [analysis_4.csv] (<https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/PythonAnalysis/analysis_4.ipynb>)
+Link to code : [analysis_4] (<https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/PythonAnalysis/analysis_4.ipynb>)
 
 The above command line performs the following function, it first checks if an output folder exsists and if the team name subfolder is present. If not present, it will create respective folders. The script calculates how many times a particular team has won when they have scored above a particular score and then calculates the win rate in percentage vs each season. Plots it on a Bar graph accordingly. 
 Below is a sample output.
