@@ -1,3 +1,9 @@
+
+# IPL 
+
+![IPL](http://reviste.in/wp-content/uploads/2016/05/vivo-1458404700-800.jpg)
+
+
 # **Table of Contents** 
 
 - [IPL](#)
@@ -16,12 +22,7 @@
 		- [Calculate the WINRATE in percentage of a particular team in all seasons when they have scored above a certain score?](.#calculate-the-winrate-in-percentage-of-a-particular-team-in-all-seasons-when-they-have-scored-above-a-certain-score)
 	- [Analysis 5](.#analysis-5)
 		- [For a particular team, what is the average runs scored during and after powerplay in each season?](.#for-a-particular-team-what-is-the-average-runs-scored-during-and-after-powerplay-in-each-season)
-
-
-# IPL 
-
-![IPL](<https://cricfrog.com/wp-content/uploads/2016/01/Indian-Premier-League-IPL-Today-Match-Prediction.jpg>)
-
+		
 
 # IPL DATA ANALYSIS AND PLOTTING THE ANALYSED DATA
 2 data sets of the IPL tournament which is played in india every year was downloaded from the below link and using the 2 data sets, data analysis was done and the output can be seen as both a CSV file as well as a graph in PNG format. I have written 5 scripts which perform the analysis and whereas 1 script that divides the obtained dataset into the required format.  
