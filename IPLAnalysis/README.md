@@ -2,11 +2,22 @@
 
 - [IPL](#)
 - [IPL DATA ANALYSIS AND PLOTTING THE ANALYSED DATA](#)
-	- [Online Documentation](.#online-documentation) 
+	- [Online Documentation](.#online-documentation)
 	- [Requirements for the Script](.#requirements-for-the-script)
-	- [Data Extraction](.#data-extraction)
-	- [Steps to Execute](.#steps-to-execute)
-	
+- [Data Extraction](.#data-extraction)
+- [Steps to Execute](.#steps-to-execute)
+	- [Analysis 1](.#analysis-1)
+		- [How many wickets have fallen in each over through all the seasons for a particular team?](.#how-many-wickets-have-fallen-in-each-over-through-all-the-seasons-for-a-particular-team)
+	- [Analysis 2](.#analysis-2)
+		- [What percentage of runs scored by a team have come from boundaries(4s and 6s seperately), extras and by other ways for each season?](.#what-percentage-of-runs-scored-by-a-team-have-come-from-boundaries4s-and-6s-seperately-extras-and-by-other-ways-for-each-season)
+	- [Analysis 3](.#analysis-3)
+		- [Arrange the Batsmen according to their rank based on the total runs scored in all seasons. What is their contribution to the total runs scored by their team in each season?](.#arrange-the-batsmen-according-to-their-rank-based-on-the-total-runs-scored-in-all-seasons-what-is-their-contribution-to-the-total-runs-scored-by-their-team-in-each-season)
+	- [Analysis 4](.#analysis-4)
+		- [Calculate the WINRATE in percentage of a particular team in all seasons when they have scored above a certain score?](.#calculate-the-winrate-in-percentage-of-a-particular-team-in-all-seasons-when-they-have-scored-above-a-certain-score)
+	- [Analysis 5](.#analysis-5)
+		- [For a particular team, what is the average runs scored during and after powerplay in each season?](.#for-a-particular-team-what-is-the-average-runs-scored-during-and-after-powerplay-in-each-season)
+
+
 # IPL 
 
 ![IPL](<https://cricfrog.com/wp-content/uploads/2016/01/Indian-Premier-League-IPL-Today-Match-Prediction.jpg>)
