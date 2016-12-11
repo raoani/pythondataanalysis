@@ -1,3 +1,12 @@
+**Table of Contents** 
+
+- [IPL](#)
+- [IPL DATA ANALYSIS AND PLOTTING THE ANALYSED DATA](#)
+	- [Online Documentation](.#online-documentation) 
+	- [Requirements for the Script](.#requirements-for-the-script)
+	- [Data Extraction](.#data-extraction)
+	- [Steps to Execute](.#steps-to-execute)
+	
 # IPL 
 
 ![IPL](<https://cricfrog.com/wp-content/uploads/2016/01/Indian-Premier-League-IPL-Today-Match-Prediction.jpg>)
@@ -22,7 +31,7 @@ Download the 2 data sets from the above link.
 
 
 
-## Data Extraction
+# Data Extraction
 
 Execute collect_data.py. This particular script combines the 2 datasets (matches,deliveries) into 1 file. Creates a folder with the name Seasons and a subfolder with the name combined. Stores the combined dataset as combined.csv inside combined subfolder and then splits the merged data into different seasons, stored the split data into different CSVs inside the Seasons folder. Below is the command line to execute the script.
 
@@ -57,13 +66,15 @@ Execute collect_data.py. This particular script combines the 2 datasets (matches
  
  
 
-## Steps to Execute
+# Steps to Execute
 
-1. ##  How many wickets have fallen in each over through all the seasons for a particular team?
+## Analysis 1
+ 
+### How many wickets have fallen in each over through all the seasons for a particular team?
 
-    Execute analysis_1.py as follows,
+	Execute analysis_1.py as follows,
 	
-    python analysis_1.py --Team your_wish
+	python analysis_1.py --Team your_wish
 
 Link to code : [analysis_1] (<https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/PythonAnalysis/analysis_1.ipynb>)
 
@@ -80,11 +91,13 @@ Use Quotes to write the team name ("Royal Challengers Bangalore") and use full n
 
 
 
-2. ##  What percentage of runs scored by a team have come from boundaries(4s and 6s seperately), extras and by other ways for each season?
+## Analysis 2
+
+### What percentage of runs scored by a team have come from boundaries(4s and 6s seperately), extras and by other ways for each season?
    
-   Execute analysis_2.py as follows,
+	Execute analysis_2.py as follows,
 	
-   python analysis_2.py --Team your_wish
+	python analysis_2.py --Team your_wish
    
 Link to code : [analysis_2] (<https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/PythonAnalysis/analysis_2.ipynb>)
  
@@ -96,12 +109,13 @@ The above command line performs the following function, it first checks if an ou
 ![analysis_2](https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/Output/Royal%20Challengers%20Bangalore/analysis_2.jpg)
 
 
+## Analysis 3
+ 
+### Arrange the Batsmen according to their rank based on the total runs scored in all seasons. What is their contribution to the total runs scored by their team in each season?
 
-3. ## Arrange the Batsmen according to their rank based on the total runs scored in all seasons. What is their contribution to the total runs scored by their team in each season?
-Analysis/deliveries.csv>
-   Execute analysis_3.py as follows,
+ 	Execute analysis_3.py as follows,
 
-   python analysis_3.py --number your_wish
+	python analysis_3.py --number your_wish
    
 Link to csv : [analysis_3.csv] (<https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/Output/V%20Kohli/analysis_3.csv>)
  
@@ -111,7 +125,9 @@ The above command line performs the following function, it first checks if an ou
 
 ![analysis_3](https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/Output/V%20Kohli/analysis_3.jpg)
 
-4. ## Calculate the WINRATE in percentage of a particular team in all seasons when they have scored above a certain score?
+## Analysis 4
+
+### Calculate the WINRATE in percentage of a particular team in all seasons when they have scored above a certain score?
 	
 	Execute analysis_4.py as follows,
 
@@ -127,7 +143,9 @@ Below is a sample output.
 ![analysis_4](https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/Output/Royal%20Challengers%20Bangalore/analysis_4.jpg)
 
 
-5. ## For a particular team, what is the average runs scored during and after powerplay in each season?
+## Analysis 5 
+
+### For a particular team, what is the average runs scored during and after powerplay in each season?
 
 	Execute analysis_5.py as follows,
 
