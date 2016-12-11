@@ -52,16 +52,24 @@ Execute collect_data.py. This particular script combines the 2 datasets (matches
  
  matches.csv
  
- ![matches](https://cloud.githubusercontent.com/assets/22183540/21074969/c828f854-bed4-11e6-8d6e-e929d30a123d.png)
+ id  |  season  |  city        |  date       |  team1                  |  team2                        |  toss_winner                  |  toss_decision  |  result  |  dl_applied  |  winner                 |  win_by_runs  |  win_by_wickets  |  player_of_match  |  venue                                       |  umpire1    |  umpire2         |  umpire3
+----|----------|--------------|-------------|-------------------------|-------------------------------|-------------------------------|-----------------|----------|--------------|-------------------------|---------------|------------------|-------------------|----------------------------------------------|-------------|------------------|---------
+1   |  2008    |  Bangalore   |  4/18/2008  |  Kolkata Knight Riders  |  Royal Challengers Bangalore  |  Royal Challengers Bangalore  |  field          |  normal  |  0           |  Kolkata Knight Riders  |  140          |  0               |  BB McCullum      |  M Chinnaswamy Stadium                       |  Asad Rauf  |  RE Koertzen     |
+2   |  2008    |  Chandigarh  |  4/19/2008  |  Chennai Super Kings    |  Kings XI Punjab              |  Chennai Super Kings          |  bat            |  normal  |  0           |  Chennai Super Kings    |  33           |  0               |  MEK Hussey       |  Punjab Cricket Association Stadium, Mohali  |  MR Benson  |  SL Shastri      |
+3   |  2008    |  Delhi       |  4/19/2008  |  Rajasthan Royals       |  Delhi Daredevils             |  Rajasthan Royals             |  bat            |  normal  |  0           |  Delhi Daredevils       |  0            |  9               |  MF Maharoof      |  Feroz Shah Kotla                            |  Aleem Dar  |  GA Pratapkumar  |
  
  
  Link : [matches.csv] (<https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/matches.csv>)
  
  
- deliveries.csv
+ deliveries.csv (Preview)
  
+ match_id  |  inning  |  batting_team           |  bowling_team                 |  over  |  ball  |  batsman      |  non_striker  |  bowler   |  is_super_over  |  wide_runs  |  bye_runs  |  legbye_runs  |  noball_runs  |  penalty_runs  |  batsman_runs  |  extra_runs  |  total_runs  |  player_dismissed  |  dismissal_kind  |  fielder
+----------|----------|-------------------------|-------------------------------|--------|--------|---------------|---------------|-----------|-----------------|-------------|------------|---------------|---------------|----------------|----------------|--------------|--------------|--------------------|------------------|---------
+1         |  1       |  Kolkata Knight Riders  |  Royal Challengers Bangalore  |  1     |  1     |  SC Ganguly   |  BB McCullum  |  P Kumar  |  0              |  0          |  0         |  1            |  0            |  0             |  0             |  1           |  1           |                    |                  |
+1         |  1       |  Kolkata Knight Riders  |  Royal Challengers Bangalore  |  1     |  2     |  BB McCullum  |  SC Ganguly   |  P Kumar  |  0              |  0          |  0         |  0            |  0            |  0             |  0             |  0           |  0           |                    |                  |
+1         |  1       |  Kolkata Knight Riders  |  Royal Challengers Bangalore  |  1     |  3     |  BB McCullum  |  SC Ganguly   |  P Kumar  |  0              |  1          |  0         |  0            |  0            |  0             |  0             |  1           |  1           |                    |                  |
  
- ![deliveries](https://cloud.githubusercontent.com/assets/22183540/21074967/c4aae340-bed4-11e6-930b-58be8e863863.png)
  
  
  Link : [deliveries.csv] (<https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/deliveries.csv>)
@@ -69,14 +77,16 @@ Execute collect_data.py. This particular script combines the 2 datasets (matches
  
  season_x.csv
  
- 
- ![combined](https://cloud.githubusercontent.com/assets/22183540/21074970/c950d4c2-bed4-11e6-9479-282243036b27.png)
+ season  |  match_id  |  season  |  city       |  date       |  team1           |  team2                |  toss_winner          |  toss_decision  |  result  |  dl_applied  |  winner          |  win_by_runs  |  win_by_wickets  |  player_of_match  |  venue     |  umpire1      |  umpire2      |  umpire3  |  inning  |  batting_team    |  bowling_team         |  over  |  ball  |  batsman        |  non_striker    |  bowler   |  is_super_over  |  wide_runs  |  bye_runs  |  legbye_runs  |  noball_runs  |  penalty_runs  |  batsman_runs  |  extra_runs  |  total_runs  |  player_dismissed  |  dismissal_kind  |  fielder
+--------|------------|----------|-------------|-------------|------------------|-----------------------|-----------------------|-----------------|----------|--------------|------------------|---------------|------------------|-------------------|------------|---------------|---------------|-----------|----------|------------------|-----------------------|--------|--------|-----------------|-----------------|-----------|-----------------|-------------|------------|---------------|---------------|----------------|----------------|--------------|--------------|--------------------|------------------|---------
+2009    |  59        |  2009    |  Cape Town  |  4/18/2009  |  Mumbai Indians  |  Chennai Super Kings  |  Chennai Super Kings  |  field          |  normal  |  0           |  Mumbai Indians  |  19           |  0               |  SR Tendulkar     |  Newlands  |  BR Doctrove  |  K Hariharan  |           |  1       |  Mumbai Indians  |  Chennai Super Kings  |  1     |  1     |  ST Jayasuriya  |  SR Tendulkar   |  MS Gony  |  0              |  0          |  0         |  0            |  0            |  0             |  1             |  0           |  1           |                    |                  |
+2009    |  59        |  2009    |  Cape Town  |  4/18/2009  |  Mumbai Indians  |  Chennai Super Kings  |  Chennai Super Kings  |  field          |  normal  |  0           |  Mumbai Indians  |  19           |  0               |  SR Tendulkar     |  Newlands  |  BR Doctrove  |  K Hariharan  |           |  1       |  Mumbai Indians  |  Chennai Super Kings  |  1     |  2     |  SR Tendulkar   |  ST Jayasuriya  |  MS Gony  |  0              |  0          |  0         |  0            |  0            |  0             |  0             |  0           |  0           |                    |                  |
+2009    |  59        |  2009    |  Cape Town  |  4/18/2009  |  Mumbai Indians  |  Chennai Super Kings  |  Chennai Super Kings  |  field          |  normal  |  0           |  Mumbai Indians  |  19           |  0               |  SR Tendulkar     |  Newlands  |  BR Doctrove  |  K Hariharan  |           |  1       |  Mumbai Indians  |  Chennai Super Kings  |  1     |  3     |  SR Tendulkar   |  ST Jayasuriya  |  MS Gony  |  0              |  0          |  0         |  0            |  0            |  0             |  0             |  0           |  0           |
  
  
  Link : [season_1.csv] (<https://github.com/raoani/pythondataanalysis/blob/master/IPLAnalysis/Seasons/season_1.csv>)
  
  
-
 # Steps to Execute
 
 ## Analysis 1
