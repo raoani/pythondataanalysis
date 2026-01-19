@@ -38,7 +38,7 @@ for i in range(len(x)) :
 		for j1 in range(len(data['items'])) :
 			if data['items'][j1]['owner']['user_type'] == 'registered' :
 				user_id = data['items'][j1]['owner']['user_id']
-				r1 = requests.get('https://api.stackexchange.com/2.2/users/{0}/answers?key=q5*VT6u7xCuP)L7A*80abA((&order=desc&sort=activity&site=stackoverflow'.format(user_id))
+				r1 = requests.get('https://api.stackexchange.com/2.2/users/{0}/answers?((&order=desc&sort=activity&site=stackoverflow'.format(user_id))
 				y1 = r1.json()
 			#print (y1)
 				dict_2[str(user_id)] = {str(data['items'][j1]['owner']['display_name']) : len(y1['items'])}
