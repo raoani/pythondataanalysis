@@ -39,7 +39,7 @@ for i in range(len(x)) :
 		for j1 in range(len(data['items'])) :
 			if data['items'][j1]['owner']['user_type'] == 'registered' :
 				user_id = data['items'][j1]['owner']['user_id']
-				r = requests.get('https://api.stackexchange.com/2.2/users/{0}?key=q5*VT6u7xCuP)L7A*80abA((&order=desc&sort=modified&site=stackoverflow'.format(user_id))
+				r = requests.get('https://api.stackexchange.com/2.2/users/{0}?((&order=desc&sort=modified&site=stackoverflow'.format(user_id))
 				y  = r.json()
 				dict_3[str(user_id)] = {str(y['items'][0]['display_name']) : str(y['items'][0]['link'])}
 				dict_2[str(user_id)] = y['items'][0]['reputation']
