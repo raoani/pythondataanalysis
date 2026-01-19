@@ -40,7 +40,7 @@ for i in range(len(x)) :
 				dict_3[str(user_id)] = str(data['items'][j1]['title']) 	
 				if data['items'][j1]['is_answered'] == True :
 					question_id = data['items'][j1]['question_id']
-					r = requests.get('https://api.stackexchange.com/2.2/questions/{0}/answers?key=q5*VT6u7xCuP)L7A*80abA((&order=desc&sort=activity&site=stackoverflow'.format(question_id))
+					r = requests.get('https://api.stackexchange.com/2.2/questions/{0}/answers?((&order=desc&sort=activity&site=stackoverflow'.format(question_id))
 					y  = r.json()
 					for j2 in range(len(y['items'])) :
 					 	if y['items'][j2]["is_accepted"] == True :
