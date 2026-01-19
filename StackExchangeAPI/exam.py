@@ -42,7 +42,7 @@ newpath3 = creating_newpath(newpath2,z)  #creates a directory with todays's date
 
 
 
-r = requests.get('https://api.stackexchange.com/2.2/questions?key=q5*VT6u7xCuP)L7A*80abA((&order=desc&sort=activity&site=stackoverflow',params=dict_1)  #requests for questions of particular search_term
+r = requests.get('https://api.stackexchange.com/2.2/questions?((&order=desc&sort=activity&site=stackoverflow',params=dict_1)  #requests for questions of particular search_term
 y  = r.json() #stroes it in Json
 
 
