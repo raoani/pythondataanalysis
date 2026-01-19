@@ -45,7 +45,7 @@ for i in range(len(x)) :
 			if data['items'][j1]['owner']['user_type'] == 'registered' :  #checks if the user has deleted his account or not 
 				user_id = data['items'][j1]['owner']['user_id'] #extracts the user_ID
 				dict_3[str(user_id)] = {str(data['items'][j1]['owner']['display_name']) : str(data['items'][j1]['title'])}  #stores user_id as the key with name and title of question as the values
-				r = requests.get('https://api.stackexchange.com/2.2/users/{0}?key=q5*VT6u7xCuP)L7A*80abA((&order=desc&sort=modified&site=stackoverflow'.format(user_id))
+				r = requests.get('https://api.stackexchange.com/2.2/users/{0}?&order=desc&sort=modified&site=stackoverflow'.format(user_id))
 				y  = r.json()
 				with open(os.path.join(newpathuid , 'user_id') , 'a') as outfile:
     					json.dump(y, outfile)
