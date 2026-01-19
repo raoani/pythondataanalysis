@@ -5,8 +5,6 @@ import sys
 import argparse
 from datetime import datetime,date,timedelta
 from requests_oauthlib import OAuth1
-auth = OAuth1('PozqKlpn6dpxJ2qR1Mgc2VDov', 'NAuyMFdsKTGDb3WQ8NoYo4S1ExeeGgh9KR5n27VCMHv6FUH3V0',
-                  '84084965-Of9l5EGjcPar9mcHBNhPzlK3Mx4GktMo85WfjZPbL', 'LS8S3jaT9RhiCprzZfxWUDvjGwnSTdfEiXbVDmczCND3Y')
 parser = argparse.ArgumentParser()
 parser.add_argument("--search_term", help="provide a search term use quotes for a string with space") #Accepts any search term"
 args = parser.parse_args()
